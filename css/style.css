@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #161E21;
+	color: white;
+	font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+	general
+*/
+
+div.clear{
+	clear: both;
+}
+
+/*
+	titles
+*/
+
+h1, h2, h3, h4, h5{
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 18pt;	
+	color: white;
+	font-weight: bold;
+	margin: 10px 0; 
+}
+
+h3{
+	margin-bottom: 5px;
+}
+
+.red{
+	color: #C32244;
+}
+
+a:hover{
+	color: #E1B8C1;
+}
+
+/*
+	logo
+*/
+
+.logo img{
+	float: left;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 5px;		
+}
+nav.menu{
+	float: right;
+}
+
+/*
+	menu
+*/
+
+.menu-container{
+	background: rgba(0,0,0,0.5);
+	margin-top: 15px;
+}
+
+nav.menu li{
+	display: inline-block;
+}
+
+nav.menu a{
+	display: block;
+	padding: 20px 15px;
+	font-weight: bold;
+}
+
+nav.menu a:hover,
+a.news-item:hover,
+nav.menu a.active
+{
+	background: #C32244;
+}
+
+
+/*
+	container
+*/
+
+div.container{
+	width: 70%;
+	margin: auto;
+}
+
+div.cards{
+	margin: 10px 0;
+}
+
+div.img{
+	font-size: 30pt;
+	padding-bottom: 10px;
+}
+
+div.cards .card{
+	background: #202B2D;
+	border-radius: 5px;
+	padding: 7px;
+	width: 30%;
+	min-height: 50px;
+	display: inline-block;
+	margin-right: 2%;
+}
+
+.card .img, .card .content{
+	display: inline-block;
+}
+
+.card .img{
+	margin-left: 10px;
+}
+.card .content{
+	margin-left: 20px;
+}
+
+/*news list*/
+
+div.news-container{
+	margin-top: 15px;
+	background: #273238;
+	height: 400px;
+}
+
+.item-list{
+	width: 60%;
+	height: 100%;
+	float: left;
+	overflow-y: scroll;
+}
+.summary{
+	width: 40%;
+	float: left;
+}
+.item-list, .summary{
+	display: inline-block;
+	font-size: 10pt;
+}
+
+a.news-item{
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid rgba(1,1,1, 0.3);
+}
+
+.news-item img{
+	width: 10%;
+	display: inline-block;
+	vertical-align: top;
+}
+.news-item div{
+	width: 85%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+.news-item p{
+	margin: 10px 0;
+}
+
+.news-item .date,
+.news-item p
+{
+	font-size: 9px;
+	color: #6D7D85;
+}
+
+
+.summary .banner{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.summary .banner img{
+	width: 100%;
+}
+
+.summary div.txt{
+	padding: 10px;
+	font-size: 9pt;
+}
+
+/*buttons*/
+
+.btn-default{
+	background: #C32244;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.btn-default:hover{
+	background: #97112E;
+}
+
+
+footer{
+	padding: 30px 10px;
+	background: rgba(0,0,0, 0.7);
+	text-align: center;
+	margin: 10px 0;
+
+}
+
+/*
+	resposive
+*/
+
+@media screen and (max-width: 550px) {
+    div.container{
+      width: 100%;
+    }
+
+    .logo img, nav.menu{
+    	float: none;
+    }
+
+    .logo{
+		text-align: center;
+    }
+
+    nav.menu{
+    	width: 100%;
+    }
+
+    div.cards .card{
+    	width: 90%;
+    	display: block;
+    	margin: auto;
+    	margin-top: 10px;
+    }
+
+    div.content article,
+    h1
+    {
+		padding: 5px 10px;
+    }
+
+    .news-container .item-list{
+		width: 100%;
+    }
+
+    .news-container .summary{
+    	display: none;
+    }
+
+	.news-item img{
+		width: 30%;
+	}
+
+	.news-item div{
+		width: 50%;
+	}
+	.news-item div p{
+		font-size: 10pt;
+
+	}
+
+
+
+}
